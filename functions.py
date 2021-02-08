@@ -155,34 +155,6 @@ def Function(following,driver):
 
 
     def stories():
-        driver.find_element_by_xpath("/html/body/div[1]/section/main/section/div/div[1]/div/div/div/div/ul/li[3]/div/button").click()
-
-        while True:
-            try:
-                driver.find_element_by_xpath("/html/body/div[1]/section/nav/div[2]/div/div/div[3]/div/div[2]/a/svg")
-                print("found")
-                break
-
-            except:
-                continue
-            
-
-
-    #we call the follow function
-    #follow()
-    stories()
-    sleep(3)
-
-    #we quit the driver
-    driver.quit()
-    sleep(3)
-
-
-
-
-
-"""
-    def stories():
         x=0
         try:
             x+=1
@@ -219,5 +191,13 @@ def Function(following,driver):
         except:
             #if there are not any stories, we pass
             pass
-    
-"""
+
+
+    #we call the follow function
+    #follow()
+    stories()
+    sleep(3)
+
+    #we quit the driver
+    driver.quit()
+    sleep(3)
