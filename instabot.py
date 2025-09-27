@@ -71,7 +71,7 @@ class instaBot:
 
             #we delete the folder
             try:
-                shutil.rmtree("C:\\Users\\lmoli\\Pictures\\Instagram profile image", ignore_errors=True)
+                shutil.rmtree(".\\Instagram profile image", ignore_errors=True)
                 sleep(2)
             
             except:
@@ -79,7 +79,7 @@ class instaBot:
 
             #We create a folder to store the profile image
             try:
-                path = "C:\\Users\\lmoli\\Pictures"
+                path = ".\\Pictures"
                 path = os.path.join(path, "Instagram profile image")
                 os.mkdir(path)
                 sleep(1)
@@ -93,7 +93,7 @@ class instaBot:
 
             try:
                 #and we copy and rename the image to the appropiate folder
-                os.replace(location, "C:\\Users\lmoli\Pictures\Instagram profile image\\descarga.jpg")
+                os.replace(location, "\Pictures\Instagram profile image\\descarga.jpg")
 
             except: 
                 pass
@@ -265,3 +265,4 @@ while True:
         continue
 
     sleep(3)
+
