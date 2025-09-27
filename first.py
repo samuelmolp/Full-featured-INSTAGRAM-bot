@@ -52,7 +52,7 @@ def main(driver,following):
             driver.find_element_by_xpath("/html/body/div[1]/section/main/div/header/div/div/div/button").click()
             #driver.find_element_by_xpath("/html/body/div[1]/section/main/section/div/div[2]/div[1]/div[2]/div/div/div/div/ul/li[5]/div/div/div/div/button").click()
             sleep(3)
-            os.system('"C:\\Users\lmoli\Desktop\SAMUEL\TERCERO\PROGRAMACIÓN\INSTAGRAM\\Profile.exe"')
+            os.system('".\\Profile.exe"')
             sleep(7)
 
             #finally, we refresh and quit the broser
@@ -67,3 +67,4 @@ def main(driver,following):
     follow_first()
     driver.quit()
     sleep(4)
+
